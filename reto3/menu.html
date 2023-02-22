@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>To Do List</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <ul>
+            <li><i class="bi bi-list"></i></li>
+            <li> Mis tareas</li>
+            <li><i class="bi bi-person-square"></i></li>
+        </ul>
+    </div>
+    <div class="container1">
+        <p>Nombre de la tarea</p>
+        <div class="input-group">
+            <input id="nombreTarea" type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <button type="button" class="btn btn-outline-secondary">Elige..</button>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" id="ul1">
+            <li><a id="personal" class="dropdown-item" href="#">Personal</a></li>
+            <br><br>
+            <li><a id="domestica" class="dropdown-item" href="#">Domestica</a></li>
+            <br><br>
+            <li><a id="entretenimiento" class="dropdown-item" href="#">Entretenimiento</a></li>
+            <li><a id="laboral" class="dropdown-item" href="#">Laboral</a></li>
+            </ul>
+          </div>
+          
+          <label for="exampleFormControlTextarea1" class="form-label">Descripción de la Tarea</label>
+          <textarea class="form-control" id="textArea" rows="3"></textarea>
+          <div class="prioridad">
+            <p>Prioridad</p>
+            <button id="baja" type="button" class="btn btn-success">Baja</button>
+            <button id="media" type="button" class="btn btn-warning">Media</button>
+            <button id="alta" type="button" class="btn btn-danger">Alta</button>
+            
+        </div>
+        <div>
+            <nav class="agregar"><button class="btn  me-md-2" type="button" id="add">Agregar</button></nav>
+            <nav class="agregar"><button class="btn  me-md-2" type="button" id="add">Cancelar</button></nav>
+        </div>
+        
+        </div>
+    
+   
+    <!--<section class="container">
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+
+                <ul class="list-group">
+                    <br><br><br>
+                    <li class="list-group-item active" aria-current="true">To Do List</li>
+                </ul>
+                <br><br><br><br>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button" id="add">+</button>
+                    
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+    </section>
+    -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="reto3.js"></script>
+</div>
+</body>
+</html>
