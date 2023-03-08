@@ -1,7 +1,3 @@
-/*let addButton = document.getElementById('add').addEventListener('click', function(){
-    alert("hola")
-})
-*/
 let nombreTarea = document.getElementById('nombreTarea')
 let personal = document.getElementById('personal')
 let domestica = document.getElementById('domestica')
@@ -98,6 +94,7 @@ add.addEventListener("click", () => {
         let descripcionTarea = document.createElement('p');
         let botonAgregar = document.createElement('button');
         let botonBorrar = document.createElement('button');
+        let nroTarea = 0;
         titulo.textContent = "Nombre de la tarea: " + nombreTarea.value;
         descripcionTarea.textContent = "Descripcion: " + descripcion.value;
         botonAgregar.textContent = "Agregar tarea";
@@ -115,22 +112,32 @@ add.addEventListener("click", () => {
       
         listadoDeTareas.style.display = "block";
         listadoDeTareas.appendChild(modelo);
+        
         section.classList.add('borrar');
         miDiv.classList.add('borrar');
+        
         nombreTarea.value = " ";
         descripcion.value = " ";
         botonAgregar.addEventListener('click', () => {
+        nroTarea++;
         miDiv.classList.remove('borrar')
         listadoDeTareas.style.display = "none";
-          })
+        })
         botonBorrar.addEventListener('click', ()=> {
         listadoDeTareas.removeChild(modelo);
-        })
-        if(listadoDeTareas ==" "){
+        nroTarea--
+        if(nroTarea == 0){
 
-          section.classList.remove('borrar');
+        section.classList.remove('borrar')
 
         }
+        
+        botonMostrar.addEventListener("click", function(){
+          miDiv.style.display = "block";
+  
+        });
+        
+      })
 
         
       })
