@@ -212,29 +212,29 @@ continuar.addEventListener('click', () => {
 
     //pantalla4
 
-vat.addEventListener('click', ()=> {
-  pantalla4.style.display = "none"
-  pantalla3.style.display = "flex"
-  iniciarJuego()
-})
+// vat.addEventListener('click', ()=> {
+//   pantalla4.style.display = "none"
+//   pantalla3.style.display = "flex"
+//   iniciarJuego()
+// })
 
-vr.addEventListener('click', () =>{
-  pantalla4.style.display = "none"
-  pantalla5.style.display = "block"
-  const lista = document.getElementById('j1c')
+// vr.addEventListener('click', () =>{
+//   pantalla4.style.display = "none"
+//   pantalla5.style.display = "block"
+//   const lista = document.getElementById('j1c')
 
-  jugadores.forEach(el => {
+//   jugadores.forEach(el => {
     
-    console.log(el.nombre , el.cartas, "desde ver resultado")
-    lista.innerHTML +=  `
-      <li>${el.nombre}</li>
+//     console.log(el.nombre , el.cartas, "desde ver resultado")
+//     lista.innerHTML +=  `
+//       <li>${el.nombre}</li>
       
-    <br><br>
-      <li><img src="${el.image}"></li>`
-    return
-  })
+//     <br><br>
+//       <li><img src="${el.image}"></li>`
+//     return
+//   })
   
-})
+// })
 
 
 //pantalla 5
