@@ -223,20 +223,23 @@ vr.addEventListener('click', () =>{
   pantalla5.style.display = "block"
   const lista = document.getElementById('j1c')
 
-  let mj1 = jugadores.filter((j) => {
+  jugadores.forEach(el => {
     
-    console.log(j.nombre , j.cartas, "desde ver resultado")
-    j1c.innerHTML +=  `
-      <li>${j.nombre}</li>
+    console.log(el.nombre , el.cartas, "desde ver resultado")
+    lista.innerHTML +=  `
+      <li>${el.nombre}</li>
       
     <br><br>
-      <li><img src="${jugadores.image}"></li>`
+      <li><img src="${el.image}"></li>`
     return
   })
   
 })
 
+
 //pantalla 5
+
+
 
 // const miArray = ['objeto1', 'objeto2', 'objeto3', 'objeto4', 'objeto5'];
 

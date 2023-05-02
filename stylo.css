@@ -36,6 +36,7 @@ p{
     padding-bottom: 25px;
     font-size: 20px;
     font-weight: bold;
+    color: #D4F1F4;
 }
 
     
@@ -74,8 +75,9 @@ a{
   
 }
 h1{
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#189AB4;
 }
 
 .card{
