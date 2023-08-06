@@ -11,6 +11,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     
 }
 
+img:hover{
+    transform: scale(1.5);
+    transition: all 0.3s ease-out;
+}
 header{
     padding: 40px;
     margin-bottom: -16px;
@@ -18,7 +22,7 @@ header{
 }
 header div img{
      border-radius: 200px;
-     *float: inline-start;
+     
      
 }
 
